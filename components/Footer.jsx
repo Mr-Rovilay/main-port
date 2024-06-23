@@ -29,7 +29,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center space-x-2">
               <MapPinIcon size={20} />
-              <span>15 Atokun street, Igando Egan Lagos</span>
+              <span>15 I.K Peters street, Ajao Estate Lagos</span>
             </li>
           </ul>
         </div>

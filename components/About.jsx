@@ -29,7 +29,7 @@ const infoData = [
   },
   {
     icon: <HomeIcon size={20} />,
-    text: "15 Atokun street, Igando Egan Lagos",
+    text: "15 I.K Peters street, Ajao Estate Lagos",
   },
 ];
 
