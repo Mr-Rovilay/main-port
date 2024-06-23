@@ -10,10 +10,6 @@ import { FaLinkedinIn } from "react-icons/fa6";
 
 const icons = [
   {
-    path: "https://www.youtube.com/channel/UCUMAbOuU1I103lprpQ1GfLQ",
-    name: <RiYoutubeFill />,
-  },
-  {
     path: "https://www.linkedin.com/in/ayodeji-akinola-296405224/",
     name: <FaLinkedinIn />,
   },

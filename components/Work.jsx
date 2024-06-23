@@ -4,8 +4,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
-import Link from "next/link";
-import { Button } from "./ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ProjectCard from "./ProjectCard";
 
@@ -13,38 +11,39 @@ const projectData = [
   {
     image: "/work/3.png",
     category: "React JS",
-    name: "NYSC Website",
+    name: "Note Book Website",
     description:
       "A dynamic and responsive website built with React JS for the National Youth Service Corps, featuring an intuitive user interface and seamless navigation.",
-    link: "/",
-    github: "/",
+    link: "https://notebook-bcjv.onrender.com",
+    github: "https://github.com/Mr-Rovilay/notebook",
   },
   {
     image: "/work/4.png",
     category: "React JS",
-    name: "NYSC Website",
+    name: "Todo Website",
     description:
       "A comprehensive NYSC portal created using React JS, offering a user-friendly experience with real-time data updates and modern design principles.",
-    link: "/",
-    github: "/",
+    link: "https://notebook-bcjv.onrender.com",
+    github: "https://github.com/Mr-Rovilay/todo-app",
+  },
+
+  {
+    image: "/work/1.png",
+    category: "React JS",
+    name: "NYSC kit Website",
+    description:
+      "NYSC kits online store or an NYSC kits e-commerce website This type of website specializes in selling NYSC uniforms, accessories, and other related",
+    link: "https://nysckit-ng-1.onrender.com",
+    github: "https://github.com/Mr-Rovilay/nysckit.ng",
   },
   {
     image: "/work/2.png",
     category: "React JS",
-    name: "NYSC Website",
+    name: "Shopping todo app",
     description:
       "This NYSC website showcases a sleek design and interactive elements powered by React JS, ensuring smooth performance across all devices.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "React JS",
-    name: "NYSC Website",
-    description:
-      "An innovative NYSC website developed with React JS, providing users with a streamlined interface and efficient access to essential services.",
-    link: "/",
-    github: "/",
+    link: "https://shopping-app-gkez.onrender.com",
+    github: "https://github.com/Mr-Rovilay/shopping-app",
   },
   {
     image: "/work/4.png",
@@ -52,24 +51,6 @@ const projectData = [
     name: "NYSC Website",
     description:
       "A fullstack NYSC website leveraging the power of modern technologies to deliver a robust and scalable platform for users.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "Front End Development",
-    name: "NYSC Website",
-    description:
-      "A front-end focused NYSC website built with cutting-edge development practices to offer a visually appealing and responsive user experience.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "Fullstack",
-    name: "NYSC Website",
-    description:
-      "An end-to-end NYSC website solution utilizing fullstack development techniques to ensure a seamless and efficient user journey.",
     link: "/",
     github: "/",
   },

@@ -24,10 +24,6 @@ const infoData = [
     text: "ayodejiakinola007@gmail.com",
   },
   {
-    icon: <Calendar size={20} />,
-    text: "Born on 3rd of March 1990",
-  },
-  {
     icon: <GraduationCap size={20} />,
     text: "Your Achievement",
   },
@@ -110,7 +106,7 @@ const About = () => {
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
               width={500}
               height={500}
-              src="/hero/pcboi2.webp"
+              src="/work/ayo.jpg"
               className="rounded-full"
             />
           </div>

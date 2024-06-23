@@ -68,10 +68,10 @@ const Hero = () => {
             <div className="w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
               containerStyles={
-                "relative bg-bottom rounded-full overflow-hidden shadow-lg"
+                "relative bg-bottom rounded-full overflow-hidden shadow-lg shadow  max-w-full h-auto border-none"
               }
               imgStyles={"w-[510px] h-[462px] object-cover"}
-              ImgSrc={"/hero/dev.jpg"}
+              ImgSrc={"/work/ayo.jpg"}
               alt={"Developer Image"}
             />
           </div>
