@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500 text-sm">
-        &copy; {new Date().getFullYear()} Your Name. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Akinola Ayodeji. All Rights Reserved.
       </div>
     </footer>
   );
