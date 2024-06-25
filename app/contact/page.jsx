@@ -60,10 +60,10 @@ const ContactPage = () => {
               <div className="flex items-center mb-4">
                 <Mail className="text-primary mr-2" size={20} />
                 <a
-                  href="mailto:contact@example.com"
+                  href="mailto:ayodejiakinola007@gmail.com"
                   className="text-gray-800 hover:text-primary transition-colors"
                 >
-                  contact@example.com
+                  ayodejiakinola007@gmail.com
                 </a>
               </div>
               <div className="flex items-center mb-4">
@@ -76,7 +76,7 @@ const ContactPage = () => {
                 </a>
               </div>
               <div className="text-gray-600">
-                <p>15 Atokun street, Igando Egan Lagos</p>
+                <p>15 I.K Peters street, Ajao Estate Lagos</p>
                 <p>Business Hours: Mon - Sun, 9:00 AM - 5:00 PM</p>
               </div>
             </div>
