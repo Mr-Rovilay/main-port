@@ -7,6 +7,7 @@ import {
   RiFacebookFill,
 } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { SiCoderwall } from "react-icons/si";
 
 const icons = [
   {
@@ -25,6 +26,10 @@ const icons = [
     path: "https://www.facebook.com/profile.php?id=100079050875392",
     name: <RiFacebookFill />,
   },
+  {
+    path: "https://matching.turing.com/developer-resume-preview/b7be7730055b0f21b6592c70a2aa64585eb6ebf8649530",
+    name: <SiCoderwall />
+  },
 ];
 
 const Socials = ({ containerStyles, IconStyles }) => {
@@ -32,7 +37,7 @@ const Socials = ({ containerStyles, IconStyles }) => {
     <div className={`${containerStyles}`}>
       {icons.map((icon, i) => {
         return (
-          <Link href={icon.path} key={i}>
+          <Link href={icon.path} key={i} target="_blank">
             <div className={`${IconStyles}`}>{icon.name}</div>
           </Link>
         );

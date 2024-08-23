@@ -1,18 +1,20 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import Nav from "./Nav";
 import MobileNav from "./ui/MobileNav";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
-  const [header, setHeader] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY > 40 ? setHeader(true) : setHeader(false);
+      setIsScrolled(window.scrollY > 40);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -21,22 +23,20 @@ const Header = () => {
 
   return (
     <header
-      className={`${
-        header
-          ? "py-4 bg-white shadow-lg dark:bg-accent"
-          : "py-6 dark:bg-transparent"
-      } sticky top-0 z-30 transition-all ${pathname === "/" && ""}`}
+      className={`sticky top-0 z-30 transition-all ${
+        isScrolled ? "py-1 bg-white shadow-lg dark:bg-accent" : "py-6 dark:bg-transparent"
+      }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="w-16 sm:w-16">
-          <Link href={"/"}>
-            <img
-              src="/work/ayo.jpg"
-              alt="ayodeji"
-              className="shadow rounded-full max-w-full h-auto border-none"
-            />
-          </Link>
-        </div>
+      <div className="container flex items-center justify-between mx-auto">
+        <Link href="/" className="w-16 sm:w-16">
+          <Image
+            src="/work/ayo.jpg"
+            width={58}
+            height={58}
+            alt="Ayodeji Olusegun Akinola"
+            className="border-none rounded-full shadow"
+          />
+        </Link>
         <div className="flex items-center gap-x-6">
           <Nav
             containerStyles="hidden xl:flex gap-x-8 items-center"

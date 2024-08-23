@@ -5,10 +5,10 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="py-8 text-white bg-gray-800">
+      <div className="container grid grid-cols-1 gap-8 mx-auto md:grid-cols-3">
         <div>
-          <h3 className="text-xl font-semibold mb-4">About Me</h3>
+          <h3 className="mb-4 text-xl font-semibold">About Me</h3>
           <p className="text-gray-400">
             I am a passionate developer committed to turning your ideas into
             innovative solutions. Let's work together to create something
@@ -17,7 +17,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold mb-4">Contact</h3>
+          <h3 className="mb-4 text-xl font-semibold">Contact</h3>
           <ul className="space-y-2">
             <li className="flex items-center space-x-2">
               <MailIcon size={20} />
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="text-xl font-semibold mb-4">Follow Me</h3>
+          <h3 className="mb-4 text-xl font-semibold">Follow Me</h3>
           <div className="flex space-x-4 ">
             <Link
               href="https://facebook.com"
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t border-gray-700 mt-8 pt-4 text-center text-gray-500 text-sm">
+      <div className="pt-4 mt-8 text-sm text-center text-gray-500 border-t border-gray-700">
         &copy; {new Date().getFullYear()} Akinola Ayodeji. All Rights Reserved.
       </div>
     </footer>
