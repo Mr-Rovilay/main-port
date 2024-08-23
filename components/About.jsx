@@ -9,6 +9,7 @@ import {
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import Image from "next/image";
+import DevImg from "./DevImg";
 
 const personalInfo = [
   { icon: <User2 size={20} />, text: "Ayodeji" },
@@ -79,12 +80,13 @@ const About = () => {
         <h2 className="mx-auto mb-8 text-center section-title xl:mb-16">About Me</h2>
         <div className="flex flex-col xl:flex-row">
           <div className="relative flex-1 hidden xl:flex">
-            <Image
-              containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              width={500}
-              height={500}
-              src="/work/ayo.jpg"
-              className="rounded-full"
+          <DevImg
+              containerStyles={
+                "relative bg-bottom rounded-full overflow-hidden shadow-lg shadow  max-w-full h-auto border-none"
+              }
+              imgStyles={"w-[510px] h-[462px] object-cover"}
+              ImgSrc={"/work/ayo.jpg"}
+              alt={"Developer Image"}
             />
           </div>
           <div className="flex-1">
