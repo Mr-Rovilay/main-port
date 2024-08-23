@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Explore Ayodeji's portfolio showcasing innovative solutions and creative designs in web and app development."
         />
-        <meta property="og:image" content="/work/deji.pdf" />
+        <metadata property="og:image" content="/work/deji.pdf" />
         <meta property="og:url" content="https://portfolio-tiyh.onrender.com" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
