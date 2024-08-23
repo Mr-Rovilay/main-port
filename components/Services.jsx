@@ -53,11 +53,6 @@ const Services = () => {
               key={i}
               className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
             >
-              <CardHeader className="text-primary absolute -top-[60px]">
-                <div className="hidden w-[100px] h-[80px] bg-[#FFEDDF] border-solid border-2 border-[#41B36C] dark:bg-background md:flex justify-center items-center rounded-md">
-                  {item.icon}
-                </div>
-              </CardHeader>
               <CardContent className="text-center">
                 <CardTitle className="mb-4">{item.title}</CardTitle>
                 <CardDescription className="text-lg subtitle">
